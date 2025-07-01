@@ -1,0 +1,44 @@
+<style>
+    table,td,tr,th {
+        border:1px solid brown;
+        border-collapse: separate;
+        
+    }
+    tr,td,th{
+        border-radius: 5px;
+        border-style: dotted;
+        
+        font-family: 'Times New Roman', Times, serif;
+    }
+    td:nth-child(odd),th:nth-child(even){
+        background-color:lightpink ;
+    }
+    tr:nth-child(odd){
+        background-color:lightpink ;
+    }
+    tr:hover ,td:hover, th:hover{
+        background-color: green;
+    }
+</style>
+<table style= height:50px;>
+    <caption>heading</caption>
+    <colgroup>
+    <col span="2" style="visibility:collapse">
+    <col span="2" style="background-color: bisque;">    
+    </colgroup>
+    <tr>
+    <th style="font-family: 'Times New Roman', Times, serif;">Name</th>
+    <th>Age</th>
+    <th>City</th>
+    </tr>
+    <tr>
+        <th colspan="2">dhivi</th>
+        <td>20</td>
+        <td>chennai</td>
+    </tr>
+    <tr>
+        <th colspan="2">lathi</th>
+        <td>20</td>
+        <td>trichy</td>
+    </tr>
+</table>
