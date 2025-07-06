@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header {
+        background-color:slateblue;
+        padding:30px;
+        text-align: center;
+    }
+    footer {
+        background-color: lavender;
+        padding:30px;
+        text-align: center;
+    }
+    section {
+        display:flex;
+        display:-webkit-flex;
+    }
+    nav {
+        flex:2;
+        -webkit-flex:2;
+        -ms-flex:2;
+        background-color:skyblue;
+        padding:50px;
+        height:500px;
+    }
+    .Article1 {
+        flex:3;
+        -webkit-flex:3;
+        -ms-flex:3;
+        background-color: aquamarine;
+        padding:50px;
+        height:500px;
+        
+    }
+    .Article2 {
+        flex:4;
+        -webkit-flex:4;
+        -ms-flex:4;
+        background-color: rgb(8, 55, 39);
+        padding:50px;
+        height:500px;
+        
+
+    }
+    @media (max-width:500px) {
+        section {
+            flex-direction: column;
+            -webkit-flex-direction:column;
+        }
+
+    }
+</style>
+<body>
+    <header>
+        <h1>Hi! I'm Saisaran</h1>
+        <p>Studying 7 std.</p>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Hobbies</a></li>
+                <li><a href="#">Favorites</a></li>
+            </ul>
+        </nav>
+        <article class="Article1">
+            <h3>My favorites</h3>
+            <p>Visit my favorite things here.<a href="#">Favo</a></p>
+        </article>
+        <article class="Article2">
+            <h3>My Hobbies</h3>
+            <p>Visit my hobbies here.<a href="#">Hobby</a></p>
+
+        </article>
+        </section>
+    <footer>
+        <address>City:Hyderabad.</address>
+    </footer>
+    
+</body>
+</html>
