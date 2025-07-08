@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    body {
+        background-image: url(img/student.avif);
+        background-size: 100% 100%;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        
+    }
+    h1 {
+        color:black;
+    
+    }
+</style>
+<body>
+    <form >
+        <h1>Student Feedback Form!</h1>
+        <label for="name">Student Name:</label>
+        <input type="text" required id="name" placeholder="Your Name"><br><br>
+        <label for="mail">Email Address:</label>
+        <input type="text" required id="mail" placeholder="example@gmail.com"><br><br>
+
+        <label for="course">Course Name:</label>
+        
+        <select name="course" idselect size="5">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="Javascript">Javascript</option>
+            <option value="Python">Python</option>
+            <option value="Data Science">Data Science</option>
+        </select>
+        <br><br>
+        <label for="rate">Ratings:</label>
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5">Sugar Crush</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4">Delicious</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3">Divine</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2">Sweet</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1">Oh!No:(</label><br><br>
+        <label for="header">What do you like?</label>
+    <br>
+        <input type="checkbox" name="choice" id="about1">
+        <label for="about1">Content</label><br>
+        <input type="checkbox" name="choice" id="about2">
+        <label for="about2">Teaching Style</label><br>
+        <input type="checkbox" name="choice" id="about3">
+        <label for="about3">Practice Exercise</label><br>
+        <input type="checkbox" name="choice" id="about4">
+        <label for="about4">Notes</label><br>
+        <input type="checkbox" name="choice" id="about5">
+        <label for="about5">Projects</label><br><br>
+        <label for="suggest">Suggestions:</label>
+        <input type="text" id="suggest" placeholder="Your suggestions here"><br><br>
+        <label for="header">Recommended:</label>
+
+        <input type="radio" name="choice" id="yes" >
+         <label for="yes">Yes!</label>
+         <input type="radio" name="choice" id="no">
+         <label for="no">No:(</label><br><br>
+
+        <input type="submit"><br><br>
+         <input type="reset"  >
+        
+         
+
+        
+    </form>
+    
+</body>
+</html>
