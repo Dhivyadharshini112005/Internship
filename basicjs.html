@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sample1">This is Basic Javascript</h1>
+    <p id="sample">Welcome</p>
+    <button type="button" onclick="document.getElementById('sample').innerHTML='Welcome'">You're welcome</button>
+    <button ondblclick="clock()">Double Click</button>
+    <button onkeypress=" key()">Key Press</button>
+    <p id="demo">Dhivii</p>
+    <button onfocus="choco()">Onfocus</button>
+    <button onblur="door()">Onblur</button>
+    <script>
+        document.getElementById("sample1").style.textAlign="center";
+        document.getElementById("sample").style.backgroundColor="green";
+
+        function clock(){
+            document.getElementById("sample").innerHTML="You Double Clicked";
+        }
+        function key(){
+            document.getElementById("sample").innerHTML="This is keypress"; 
+       }
+       function choco(){
+            document.getElementById("demo").style.backgroundColor="violet";
+       }
+       function door(){
+            document.getElementById("demo").style.backgroundColor="lightgrey";
+       }
+    </script>
+    
+</body>
+</html>

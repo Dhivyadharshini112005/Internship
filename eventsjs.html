@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener("load",function(){
+            alert("page loaded");
+        });
+
+        document.addEventListener("DOMContentLoaded",function(){
+            console.log("html parsed");
+        });
+        window.addEventListener("resize",function(){
+            console.log("resized"+window.innerWidth+"*"+window.innerHeight);
+        });
+        window.addEventListener("scroll",function(){
+            console.log("Page scrolled");
+        });
+        window.addEventListener("unload",function(){
+            console.log("page unloadded");
+        });
+    </script>
+    
+</body>
+</html>
